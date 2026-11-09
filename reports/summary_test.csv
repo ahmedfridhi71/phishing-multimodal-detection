@@ -1,0 +1,13 @@
+﻿Modele,Evaluation,F1,Precision,Rappel,AUC,Sites,Phishing,TP,FP,FN,TN
+Mod 1 : URL (LogReg_C10),TEST (tous),0.882,0.913,0.853,0.972,1059,421,359,34,62,604
+Mod 1 : URL (LogReg_C10),TEST (sans gros),0.885,0.88,0.89,0.977,915,281,250,34,31,600
+Mod 2A : HTML (LinearSVC),TEST (tous),0.973,0.969,0.976,0.997,1059,421,411,13,10,625
+Mod 2A : HTML (LinearSVC),TEST (sans gros),0.965,0.955,0.975,0.998,915,281,274,13,7,621
+Mod 2B : structure (GradBoost),TEST (tous),0.889,0.881,0.898,0.952,1059,421,378,51,43,587
+Mod 2B : structure (GradBoost),TEST (sans gros),0.845,0.827,0.865,0.951,915,281,243,51,38,583
+Mod 3 : image (ResNet50),TEST (tous),0.899,0.92,0.879,0.978,1059,421,370,32,51,606
+Mod 3 : image (ResNet50),TEST (sans gros),0.888,0.889,0.886,0.978,915,281,249,31,32,603
+Fusion : moyenne simple,TEST (tous),0.976,0.972,0.981,0.996,1059,421,413,12,8,626
+Fusion : moyenne simple,TEST (sans gros),0.97,0.958,0.982,0.996,915,281,276,12,5,622
+Fusion : LogReg,TEST (tous),0.983,0.981,0.986,0.997,1059,421,415,8,6,630
+Fusion : LogReg,TEST (sans gros),0.981,0.972,0.989,0.997,915,281,278,8,3,626
