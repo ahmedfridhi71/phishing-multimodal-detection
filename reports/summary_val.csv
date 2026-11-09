@@ -9,3 +9,7 @@ Mod 2B : structure (GradBoost),val (tous),0.871,0.859,0.884,0.954,1059,421
 Mod 2B : structure (GradBoost),val (sans gros),0.849,0.835,0.863,0.949,996,358
 Mod 3 : image (ResNet50 ep2),val (tous),0.92,0.925,0.914,0.977,1059,421
 Mod 3 : image (ResNet50 ep2),val (sans gros),0.913,0.913,0.913,0.977,996,358
+Fusion : moyenne simple,val (tous),0.974,0.969,0.979,0.998,1059,421
+Fusion : moyenne simple,val (sans gros),0.969,0.964,0.975,0.998,996,358
+Fusion : LogReg (train→val),val (tous),0.975,0.981,0.969,0.999,1059,421
+Fusion : LogReg (train→val),val (sans gros),0.972,0.977,0.966,0.999,996,358

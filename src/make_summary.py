@@ -12,11 +12,11 @@ def meilleur(fichier, prefixe):
     m = data.get("meilleur", data.get("meilleur_A", {}))
     nom = m.get("nom", "")
     rows = []
-    for suffix, label in [("_train", "train"), ("_val", "val (tous)"), ("_val_sans_gros", "val (sans gros)")]:
+    for suffix, label in [("_train","train"),("_val","val (tous)"),("_val_sans_gros","val (sans gros)")]:
         cle = f"{nom}{suffix}"
         if cle in data:
             d = data[cle]
-            rows.append({"Modele": prefixe + f" ({nom})", "Evaluation": label,
+            rows.append({"Modele": prefixe+f" ({nom})", "Evaluation": label,
                          "F1": d["F1"], "Precision": d["precision"],
                          "Rappel": d["rappel"], "AUC": d["AUC"],
                          "Sites": d["sites"], "Phishing": d["phishing"]})
@@ -29,7 +29,7 @@ def meilleur_b(fichier):
     m = data.get("meilleur_B", {})
     nom = m.get("nom", "")
     rows = []
-    for suffix, label in [("_val", "val (tous)"), ("_val_sans_gros", "val (sans gros)")]:
+    for suffix, label in [("_val","val (tous)"),("_val_sans_gros","val (sans gros)")]:
         cle = f"struct_{nom}{suffix}"
         if cle in data:
             d = data[cle]
@@ -44,21 +44,41 @@ def mod3(fichier):
     if not p.exists(): return []
     data = json.loads(p.read_text(encoding="utf-8"))
     rows = []
-    for cle, label in [("val_complet", "val (tous)"), ("val_sans_gros", "val (sans gros)")]:
+    ep = data.get("meilleur", {}).get("epoch", "?")
+    for cle, label in [("val_complet","val (tous)"),("val_sans_gros","val (sans gros)")]:
         if cle in data:
             d = data[cle]
-            ep = data.get("meilleur", {}).get("epoch", "?")
             rows.append({"Modele": f"Mod 3 : image (ResNet50 ep{ep})", "Evaluation": label,
                          "F1": d["F1"], "Precision": d["precision"],
                          "Rappel": d["rappel"], "AUC": d["AUC"],
                          "Sites": d["sites"], "Phishing": d["phishing"]})
     return rows
 
+def fusion(fichier):
+    p = R / fichier
+    if not p.exists(): return []
+    data = json.loads(p.read_text(encoding="utf-8"))
+    rows = []
+    for cle, label, modele in [
+        ("fusion_moy_val",           "val (tous)",      "Fusion : moyenne simple"),
+        ("fusion_moy_val_sans_gros", "val (sans gros)", "Fusion : moyenne simple"),
+        ("fusion_lr_val",            "val (tous)",      "Fusion : LogReg (train→val)"),
+        ("fusion_lr_val_sans_gros",  "val (sans gros)", "Fusion : LogReg (train→val)"),
+    ]:
+        if cle in data:
+            d = data[cle]
+            rows.append({"Modele": modele, "Evaluation": label,
+                         "F1": d["F1"], "Precision": d["precision"],
+                         "Rappel": d["rappel"], "AUC": d["AUC"],
+                         "Sites": d["sites"], "Phishing": d["phishing"]})
+    return rows
+
 rows = []
-rows += meilleur("step_2_1_1_report.json", "Mod 1 : URL")
-rows += meilleur("step_2_2_1_report.json", "Mod 2A : texte HTML")
+rows += meilleur("step_2_1_1_report.json",  "Mod 1 : URL")
+rows += meilleur("step_2_2_1_report.json",  "Mod 2A : texte HTML")
 rows += meilleur_b("step_2_2_1_report.json")
 rows += mod3("step_2_3_report.json")
+rows += fusion("step_fusion_report.json")
 
 df = pd.DataFrame(rows)
 print(df.to_string(index=False))
