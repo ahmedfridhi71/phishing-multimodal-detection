@@ -1,0 +1,98 @@
+{
+  "mod1_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.957,
+    "rappel": 0.895,
+    "F1": 0.925,
+    "AUC": 0.987
+  },
+  "mod2a_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.955,
+    "rappel": 0.955,
+    "F1": 0.955,
+    "AUC": 0.993
+  },
+  "mod2b_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.859,
+    "rappel": 0.884,
+    "F1": 0.871,
+    "AUC": 0.954
+  },
+  "mod3_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.925,
+    "rappel": 0.914,
+    "F1": 0.92,
+    "AUC": 0.977
+  },
+  "fusion_moy_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.969,
+    "rappel": 0.979,
+    "F1": 0.974,
+    "AUC": 0.998
+  },
+  "fusion_moy_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.964,
+    "rappel": 0.975,
+    "F1": 0.969,
+    "AUC": 0.998
+  },
+  "fusion_pond_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.969,
+    "rappel": 0.979,
+    "F1": 0.974,
+    "AUC": 0.998
+  },
+  "fusion_pond_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.964,
+    "rappel": 0.975,
+    "F1": 0.969,
+    "AUC": 0.998
+  },
+  "fusion_lr_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.981,
+    "rappel": 0.969,
+    "F1": 0.975,
+    "AUC": 0.999
+  },
+  "fusion_lr_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.977,
+    "rappel": 0.966,
+    "F1": 0.972,
+    "AUC": 0.999
+  },
+  "fusion_gb_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.973,
+    "rappel": 0.929,
+    "F1": 0.95,
+    "AUC": 0.936
+  },
+  "fusion_gb_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.968,
+    "rappel": 0.944,
+    "F1": 0.956,
+    "AUC": 0.949
+  }
+}

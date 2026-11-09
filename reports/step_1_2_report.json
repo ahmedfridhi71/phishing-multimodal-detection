@@ -1,0 +1,36 @@
+{
+  "depart": {
+    "sites": 10748,
+    "phishing": 4332
+  },
+  "exclus_fichiers": {
+    "sites": 47,
+    "phishing": 47
+  },
+  "doublons_supprimes": 114,
+  "repartition": [
+    {
+      "split": "test",
+      "legit": 638,
+      "phish": 421,
+      "part_phishing": 0.398
+    },
+    {
+      "split": "train",
+      "legit": 5102,
+      "phish": 3367,
+      "part_phishing": 0.398
+    },
+    {
+      "split": "val",
+      "legit": 638,
+      "phish": 421,
+      "part_phishing": 0.398
+    }
+  ],
+  "domaines_communs": {
+    "train/val": 0,
+    "train/test": 0,
+    "val/test": 0
+  }
+}

@@ -1,0 +1,11 @@
+﻿Modele,Evaluation,F1,Precision,Rappel,AUC,Sites,Phishing
+Mod 1 : URL (LogReg_C10),train,0.997,0.998,0.996,1.0,8469,3367
+Mod 1 : URL (LogReg_C10),val (tous),0.925,0.957,0.895,0.987,1059,421
+Mod 1 : URL (LogReg_C10),val (sans gros),0.916,0.949,0.885,0.987,996,358
+Mod 2A : texte HTML (LinearSVC),train,0.998,0.996,1.0,1.0,8469,3367
+Mod 2A : texte HTML (LinearSVC),val (tous),0.955,0.955,0.955,0.993,1059,421
+Mod 2A : texte HTML (LinearSVC),val (sans gros),0.953,0.948,0.958,0.994,996,358
+Mod 2B : structure (GradBoost),val (tous),0.871,0.859,0.884,0.954,1059,421
+Mod 2B : structure (GradBoost),val (sans gros),0.849,0.835,0.863,0.949,996,358
+Mod 3 : image (ResNet50 ep2),val (tous),0.92,0.925,0.914,0.977,1059,421
+Mod 3 : image (ResNet50 ep2),val (sans gros),0.913,0.913,0.913,0.977,996,358

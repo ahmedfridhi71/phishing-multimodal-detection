@@ -1,0 +1,126 @@
+{
+  "LogReg_C1_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.976,
+    "rappel": 0.933,
+    "F1": 0.954,
+    "AUC": 0.992
+  },
+  "LogReg_C1_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.963,
+    "rappel": 0.86,
+    "F1": 0.908,
+    "AUC": 0.982
+  },
+  "LogReg_C1_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.956,
+    "rappel": 0.846,
+    "F1": 0.898,
+    "AUC": 0.98
+  },
+  "LogReg_C0.1_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.96,
+    "rappel": 0.812,
+    "F1": 0.88,
+    "AUC": 0.969
+  },
+  "LogReg_C0.1_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.981,
+    "rappel": 0.741,
+    "F1": 0.844,
+    "AUC": 0.966
+  },
+  "LogReg_C0.1_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.978,
+    "rappel": 0.749,
+    "F1": 0.848,
+    "AUC": 0.961
+  },
+  "LogReg_C10_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.998,
+    "rappel": 0.996,
+    "F1": 0.997,
+    "AUC": 1.0
+  },
+  "LogReg_C10_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.957,
+    "rappel": 0.895,
+    "F1": 0.925,
+    "AUC": 0.987
+  },
+  "LogReg_C10_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.949,
+    "rappel": 0.885,
+    "F1": 0.916,
+    "AUC": 0.987
+  },
+  "LinearSVC_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.999,
+    "rappel": 0.999,
+    "F1": 0.999,
+    "AUC": 1.0
+  },
+  "LinearSVC_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.954,
+    "rappel": 0.893,
+    "F1": 0.923,
+    "AUC": 0.987
+  },
+  "LinearSVC_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.946,
+    "rappel": 0.888,
+    "F1": 0.916,
+    "AUC": 0.987
+  },
+  "GradBoost_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.908,
+    "rappel": 0.876,
+    "F1": 0.892,
+    "AUC": 0.973
+  },
+  "GradBoost_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.888,
+    "rappel": 0.827,
+    "F1": 0.856,
+    "AUC": 0.955
+  },
+  "GradBoost_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.867,
+    "rappel": 0.804,
+    "F1": 0.835,
+    "AUC": 0.95
+  },
+  "meilleur": {
+    "nom": "LogReg_C10",
+    "F1_val": 0.925
+  }
+}

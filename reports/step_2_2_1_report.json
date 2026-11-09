@@ -1,0 +1,194 @@
+{
+  "LogReg_C1_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.98,
+    "rappel": 0.976,
+    "F1": 0.978,
+    "AUC": 0.998
+  },
+  "LogReg_C1_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.959,
+    "rappel": 0.884,
+    "F1": 0.92,
+    "AUC": 0.988
+  },
+  "LogReg_C1_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.954,
+    "rappel": 0.925,
+    "F1": 0.939,
+    "AUC": 0.99
+  },
+  "LogReg_C0.1_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.984,
+    "rappel": 0.845,
+    "F1": 0.909,
+    "AUC": 0.992
+  },
+  "LogReg_C0.1_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.971,
+    "rappel": 0.717,
+    "F1": 0.825,
+    "AUC": 0.982
+  },
+  "LogReg_C0.1_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.971,
+    "rappel": 0.83,
+    "F1": 0.895,
+    "AUC": 0.985
+  },
+  "LogReg_C10_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.995,
+    "rappel": 1.0,
+    "F1": 0.998,
+    "AUC": 1.0
+  },
+  "LogReg_C10_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.958,
+    "rappel": 0.926,
+    "F1": 0.942,
+    "AUC": 0.991
+  },
+  "LogReg_C10_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.952,
+    "rappel": 0.95,
+    "F1": 0.951,
+    "AUC": 0.993
+  },
+  "LinearSVC_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.996,
+    "rappel": 1.0,
+    "F1": 0.998,
+    "AUC": 1.0
+  },
+  "LinearSVC_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.955,
+    "rappel": 0.955,
+    "F1": 0.955,
+    "AUC": 0.993
+  },
+  "LinearSVC_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.948,
+    "rappel": 0.958,
+    "F1": 0.953,
+    "AUC": 0.994
+  },
+  "GradBoost_train": {
+    "sites": 8469,
+    "phishing": 3367,
+    "precision": 0.939,
+    "rappel": 0.961,
+    "F1": 0.95,
+    "AUC": 0.995
+  },
+  "GradBoost_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.896,
+    "rappel": 0.857,
+    "F1": 0.876,
+    "AUC": 0.971
+  },
+  "GradBoost_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.888,
+    "rappel": 0.93,
+    "F1": 0.909,
+    "AUC": 0.981
+  },
+  "struct_LogReg_C1_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.862,
+    "rappel": 0.831,
+    "F1": 0.846,
+    "AUC": 0.933
+  },
+  "struct_LogReg_C1_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.837,
+    "rappel": 0.804,
+    "F1": 0.821,
+    "AUC": 0.932
+  },
+  "struct_LogReg_C0.1_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.866,
+    "rappel": 0.827,
+    "F1": 0.846,
+    "AUC": 0.933
+  },
+  "struct_LogReg_C0.1_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.841,
+    "rappel": 0.799,
+    "F1": 0.819,
+    "AUC": 0.932
+  },
+  "struct_LogReg_C10_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.862,
+    "rappel": 0.831,
+    "F1": 0.846,
+    "AUC": 0.933
+  },
+  "struct_LogReg_C10_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.837,
+    "rappel": 0.804,
+    "F1": 0.821,
+    "AUC": 0.932
+  },
+  "struct_GradBoost_val": {
+    "sites": 1059,
+    "phishing": 421,
+    "precision": 0.859,
+    "rappel": 0.884,
+    "F1": 0.871,
+    "AUC": 0.954
+  },
+  "struct_GradBoost_val_sans_gros": {
+    "sites": 996,
+    "phishing": 358,
+    "precision": 0.835,
+    "rappel": 0.863,
+    "F1": 0.849,
+    "AUC": 0.949
+  },
+  "meilleur_A": {
+    "nom": "LinearSVC",
+    "F1_val": 0.955
+  },
+  "meilleur_B": {
+    "nom": "GradBoost",
+    "F1_val": 0.871
+  }
+}
