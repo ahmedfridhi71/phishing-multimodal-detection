@@ -1,0 +1,15 @@
+{
+  "phish360_test": {
+    "F1": 0.882,
+    "AUC": 0.972
+  },
+  "phishing_dataset": {
+    "F1": 0.787,
+    "AUC": 0.926,
+    "precision": 0.942,
+    "rappel": 0.676,
+    "sites": 60000,
+    "phishing": 31641
+  },
+  "chute_generalisation": 0.095
+}
