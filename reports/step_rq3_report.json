@@ -1,0 +1,89 @@
+{
+  "mesures": [
+    {
+      "workers": 1,
+      "volume_pct": 10,
+      "sites": 6000,
+      "temps_s": 5.88,
+      "AUC": 0.497
+    },
+    {
+      "workers": 1,
+      "volume_pct": 25,
+      "sites": 15000,
+      "temps_s": 1.36,
+      "AUC": 0.495
+    },
+    {
+      "workers": 1,
+      "volume_pct": 50,
+      "sites": 30000,
+      "temps_s": 1.26,
+      "AUC": 0.5
+    },
+    {
+      "workers": 1,
+      "volume_pct": 100,
+      "sites": 60000,
+      "temps_s": 1.37,
+      "AUC": 0.501
+    },
+    {
+      "workers": 2,
+      "volume_pct": 10,
+      "sites": 6000,
+      "temps_s": 1.14,
+      "AUC": 0.503
+    },
+    {
+      "workers": 2,
+      "volume_pct": 25,
+      "sites": 15000,
+      "temps_s": 0.97,
+      "AUC": 0.504
+    },
+    {
+      "workers": 2,
+      "volume_pct": 50,
+      "sites": 30000,
+      "temps_s": 1.11,
+      "AUC": 0.497
+    },
+    {
+      "workers": 2,
+      "volume_pct": 100,
+      "sites": 60000,
+      "temps_s": 1.48,
+      "AUC": 0.499
+    },
+    {
+      "workers": 4,
+      "volume_pct": 10,
+      "sites": 6000,
+      "temps_s": 1.12,
+      "AUC": 0.495
+    },
+    {
+      "workers": 4,
+      "volume_pct": 25,
+      "sites": 15000,
+      "temps_s": 1.09,
+      "AUC": 0.501
+    },
+    {
+      "workers": 4,
+      "volume_pct": 50,
+      "sites": 30000,
+      "temps_s": 1.04,
+      "AUC": 0.493
+    },
+    {
+      "workers": 4,
+      "volume_pct": 100,
+      "sites": 60000,
+      "temps_s": 1.34,
+      "AUC": 0.497
+    }
+  ],
+  "total_sites": 60000
+}
