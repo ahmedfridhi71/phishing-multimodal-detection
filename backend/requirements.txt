@@ -1,0 +1,14 @@
+fastapi>=0.109
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+scikit-learn>=1.5
+joblib
+numpy
+pandas
+pyarrow
+beautifulsoup4
+pillow
+# torch / torchvision : installer la version CUDA adaptée, ex. :
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch
+torchvision
