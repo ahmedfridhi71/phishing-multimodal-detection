@@ -1,0 +1,4 @@
+﻿Dataset,Modele,F1,precision,rappel,AUC,sites,phishing
+PhreshPhish (RQ2),Mod 1 : URL,0.623,0.765,0.525,0.799,1000,453
+PhreshPhish (RQ2),Mod 2A : HTML,0.537,0.74,0.422,0.808,1000,453
+PhreshPhish (RQ2),Fusion : URL + HTML,0.581,0.778,0.464,0.829,1000,453

@@ -1,0 +1,26 @@
+{
+  "mod1": {
+    "sites": 1000,
+    "phishing": 453,
+    "precision": 0.765,
+    "rappel": 0.525,
+    "F1": 0.623,
+    "AUC": 0.799
+  },
+  "mod2a": {
+    "sites": 1000,
+    "phishing": 453,
+    "precision": 0.74,
+    "rappel": 0.422,
+    "F1": 0.537,
+    "AUC": 0.808
+  },
+  "fusion": {
+    "sites": 1000,
+    "phishing": 453,
+    "precision": 0.778,
+    "rappel": 0.464,
+    "F1": 0.581,
+    "AUC": 0.829
+  }
+}
